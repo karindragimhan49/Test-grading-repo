@@ -146,6 +146,18 @@ curl -X POST http://localhost:5000/api/items \
 4. Click "Edit" to modify an existing item
 5. Click "Delete" to remove an item (with confirmation)
 
+## Production Considerations
+
+This is a basic CRUD application for development and learning purposes. For production deployment, consider:
+
+- **Rate Limiting**: Add rate limiting middleware (e.g., `express-rate-limit`) to prevent API abuse
+- **Authentication**: Implement user authentication and authorization
+- **Input Validation**: Add comprehensive input validation and sanitization
+- **Error Logging**: Set up proper error logging and monitoring
+- **HTTPS**: Use HTTPS in production
+- **Environment Variables**: Keep sensitive data in environment variables, never commit `.env` files
+- **Database Security**: Use MongoDB authentication and restrict network access
+
 ## Environment Variables
 
 ### Backend (.env)
